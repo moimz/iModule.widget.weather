@@ -1,0 +1,39 @@
+/**
+ * 이 파일은 날씨위젯의 일부입니다. (https://www.imodules.io)
+ * 
+ * 날씨위젯 기본 템플릿 스타일시트
+ *
+ * @file /widgets/weather/templets/default/styles/style.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2019. 11. 9.
+ */
+div[data-widget=weather][data-templet=default] {position:relative; border:0 none; background:#3e52b3;}
+div[data-widget=weather][data-templet=default] > strong {display:block; font-size:14px; line-height:60px; padding:0 23px; color:#fff;}
+div[data-widget=weather][data-templet=default] > div.location {position:absolute; right:23px; top:0; width:100px;}
+div[data-widget=weather][data-templet=default] > div.location > button {height:60px; border:0 none; background:none; text-align:right;}
+div[data-widget=weather][data-templet=default] > div.location > button > span {position:relative; width:auto; max-width:calc(100% - 30px); height:60px; line-height:60px; padding:0; color:#fff;}
+div[data-widget=weather][data-templet=default] > div.location > button > span:after {content:''; display:block; position:absolute; bottom:15px; left:0; width:100%; border-top:1px solid #fff;}
+div[data-widget=weather][data-templet=default] > div.location > button > i {height:60px; line-height:60px; color:#fff;}
+div[data-widget=weather][data-templet=default] > div.location > ul {top:50px;}
+div[data-widget=weather][data-templet=default] > div.location.extend.up > ul {top:auto; bottom:50px;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info {display:none;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info:first-child {display:block;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.temperature {height:100px; text-align:center;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.temperature > i {display:inline-block; width:68px; height:100px; vertical-align:top; margin-right:30px; font-size:60px; line-height:100px; color:#fff;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.temperature > span.num {display:inline-block; font-size:34px; line-height:100px; color:#fff; vertical-align:top;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt {padding:23px;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > strong {display:block; font-size:16px; line-height:20px; height:40px; color:#fff; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p {margin-top:10px; padding-left:10px; font-size:14px; line-height:22px; color:rgba(255,255,255,.6); border-left:1px solid rgba(255,255,255,.6);}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi {font-style:none; display:inline-block; font-size:0; width:16px; height:16px; margin:3px 0px 3px 0px; vertical-align:middle; border-radius:50%; position:relative;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi.good {background:#009966;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi.moderate {background:#ffde33;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi.unhealthy_sensitive {background:#ff9933;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi.unhealthy {background:#cc0033;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi.very_unhealthy {background:#660099;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi.hazardous {background:#7e0023;}
+
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi > span {display:none; position:absolute; z-index:5; background:rgba(0,0,0,0.8); top:20px; left:-6px; white-space:nowrap; padding:5px; color:#fff; font-size:14px; font-style:normal;}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi > span:before {position:absolute; border-bottom:4px solid rgba(0,0,0,0.8); border-left:4px solid transparent; border-right:4px solid transparent; left:10px; bottom:100%; height:0; content:" ";}
+div[data-widget=weather][data-templet=default] > div.weathers > div.info > div.txt > p > i.aqi:hover > span {display:block;}

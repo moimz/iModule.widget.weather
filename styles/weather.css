@@ -1,0 +1,49 @@
+/**
+ * 이 파일은 날씨위젯의 일부입니다. (https://www.imodules.io)
+ *
+ * 날씨 아이콘을 웹폰트 형태로 제공한다.
+ *
+ * @file /widgets/weather/styles/weather.css
+ * @author Arzz
+ * @license MIT License
+ * @version 1.0.0
+ * @modified 2019. 11. 9.
+ */
+@font-face {font-family:"weather"; src:url("../fonts/weather.woff") format("woff"), url("../fonts/weather.ttf") format("truetype"), url("../fonts/weather.svg") format("svg"); font-weight:normal; font-style:normal}
+
+.wi {display:inline-block; font-style:normal; font-family:weather; font-size:inherit; text-rendering:auto; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+
+.wi-01d:before {content:"\f131";}
+.wi-cloudy1:before {content:"\f104";}
+.wi-cloudy2:before {content:"\f102";}
+.wi-cloudy3:before {content:"\f130";}
+.wi-rainly:before {content:"\f127";}
+.wi-sleet:before {content:"\f107";}
+.wi-snowy:before {content:"\f111";}
+
+.wi-01d:before {content:"\f131";}
+.wi-01n:before {content:"\f121";}
+
+.wi-02d:before {content:"\f104";}
+.wi-02n:before {content:"\f108";}
+
+.wi-03d:before {content:"\f130";}
+.wi-03n:before {content:"\f130";}
+
+.wi-04d:before {content:"\f130";}
+.wi-04n:before {content:"\f130";}
+
+.wi-09d:before {content:"\f109";}
+.wi-09n:before {content:"\f109";}
+
+.wi-10d:before {content:"\f109";}
+.wi-10n:before {content:"\f109";}
+
+.wi-11d:before {content:"\f128";}
+.wi-11n:before {content:"\f128";}
+
+.wi-13d:before {content:"\f107";}
+.wi-13n:before {content:"\f107";}
+
+.wi-50d:before {content:"\f11d";}
+.wi-50n:before {content:"\f11d";}

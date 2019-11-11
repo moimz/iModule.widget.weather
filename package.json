@@ -1,0 +1,61 @@
+{
+	"title":{
+		"ko":"날씨위젯"
+	},
+	"version":"1.0.0",
+	"description":{
+		"ko":"공공데이터포털의 동네예보통보문 정보조회 서비스를 통해 날씨위젯을 가져옵니다."
+	},
+	"author":{
+		"name":"Arzz",
+		"email":"arzz@arzz.com"
+	},
+	"homepage":"https://www.imodules.io",
+	"dependencies":{
+		"core":"3.0.0"
+	},
+	"language":"ko",
+	"configs":{
+		"weather_key":{
+			"title":{
+				"ko":"오픈웨더 API키"
+			},
+			"help":{
+				"ko":"https://openweathermap.org 에서 발급받은 API키를 입력하세요."
+			},
+			"type":"string",
+			"default":"",
+			"is_required":true
+		},
+		"aqicn_key":{
+			"title":{
+				"ko":"AQICN API키"
+			},
+			"help":{
+				"ko":"http://aqicn.org 에서 발급받은 API키를 입력하세요."
+			},
+			"type":"string",
+			"default":"",
+			"is_required":false
+		},
+		"locations":{
+			"title":{
+				"ko":"위치"
+			},
+			"help":{
+				"ko":"[위도,경도,위치명]을 배열형태로 입력하세요."
+			},
+			"type":"array",
+			"default":"",
+			"is_required":true
+		},
+		"cache":{
+			"title":{
+				"ko":"캐시유지시간(초)"
+			},
+			"type":"int",
+			"default":1800,
+			"is_required":false
+		}
+	}
+}
