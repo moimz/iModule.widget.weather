@@ -12,7 +12,7 @@
 div[data-widget=weather][data-templet=default] {position:relative; border:0 none; background:#3e52b3;}
 div[data-widget=weather][data-templet=default] > strong {display:block; font-size:14px; line-height:60px; padding:0 23px; color:#fff;}
 div[data-widget=weather][data-templet=default] > div.location {position:absolute; right:23px; top:0; width:100px;}
-div[data-widget=weather][data-templet=default] > div.location > button {height:60px; border:0 none; background:none; text-align:right;}
+div[data-widget=weather][data-templet=default] > div.location > button {height:100px; border:0 none; background:none; text-align:right;}
 div[data-widget=weather][data-templet=default] > div.location > button > span {position:relative; width:auto; max-width:calc(100% - 30px); height:60px; line-height:60px; padding:0; color:#fff;}
 div[data-widget=weather][data-templet=default] > div.location > button > span:after {content:''; display:block; position:absolute; bottom:15px; left:0; width:100%; border-top:1px solid #fff;}
 div[data-widget=weather][data-templet=default] > div.location > button > i {height:60px; line-height:60px; color:#fff;}

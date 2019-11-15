@@ -35,7 +35,7 @@ if (defined('__IM__') == false) exit;
 			<p>
 				<?php echo $weather->temperature_min; ?>℃ / <?php echo $weather->temperature_max; ?>℃, 습도 : <?php echo $weather->humidity; ?>%
 				<?php if ($weather->aqi) { ?>
-				<br><i class="aqi <?php echo $weather->aqiCode; ?>"><span>AQI : <?php echo $weather->aqi; ?> / <?php echo $weather->aqiStatus; ?></span></i> PM2.5 <?php echo $weather->pm25; ?>㎍/m³ / PM10 : <?php echo $weather->pm10; ?>㎍/m³
+				<br><i class="aqi <?php echo $weather->aqiCode; ?>"><span>AQI : <?php echo $weather->aqi; ?> / <?php echo $weather->aqiStatus; ?></span></i> PM2.5 <?php echo $weather->pm25; ?> / PM10 : <?php echo $weather->pm10; ?>㎍/m³
 				<?php } ?>
 			</p>
 		</div>
